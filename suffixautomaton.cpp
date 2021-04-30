@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <algorithm>
 
 // This snippet comes from Gianni on SO for making an easy debug toggle
 #ifdef DEBUG
@@ -27,7 +28,10 @@ in practice, even if it is a larger order operation.
 struct State {
 	int len;
 	int link;
+	int first;
+	bool clone = false;
 	vector<tr> transitions;
+	vector<int> suffixreferences;
 	bool terminal = false;
 	int index;
 	void AddTransition(char c, int i)
@@ -62,6 +66,7 @@ struct State {
 };
 
 struct SuffixAutomaton {
+	bool suffixreferences = false;
 	vector<State> states;
 	// Returns the state at index i
 	State GetState(int i)
@@ -77,6 +82,16 @@ struct SuffixAutomaton {
 		states.push_back(a);
 		return a.index;
 	}
+	// Populate each state with a vector of its children in the link tree
+	void ComputeSuffixReferences()
+	{
+		for (int i = 1; i < states.size(); i++)
+		{
+			states[states[i].link].suffixreferences.push_back(i);
+		}
+		suffixreferences = true;
+	}
+	
 	SuffixAutomaton(string s) {
 		// Initial state t0 will be initialized as last
 		State l;
@@ -90,6 +105,8 @@ struct SuffixAutomaton {
             bool done = false;
 			// Create a new state for a new equivalence class
 			int cur = AddState(states[last].len + 1);
+			// Mark the ending position of the first occurrence of this state
+			states[cur].first = states[last].len;
 			// Keep following links until we find a transition through c
 			int linked = last;
             int t = states[linked].GetTransition(c);
@@ -128,19 +145,26 @@ struct SuffixAutomaton {
 			int clone = AddState(states[p].len + 1);
 			states[clone].link = states[q].link;
 			states[clone].transitions = states[q].transitions;
+			states[clone].first = states[q].first;
+			states[clone].clone = true;
 			states[cur].link = states[clone].index;
 			states[q].link = states[clone].index;
 
 			// Updates transitions through c to q to match our new state
 			// TODO: Double check that p needs to be updated as well
-			states[p].UpdateTransition(c, states[clone].index);
-			linked = states[p].link;
-			t = states[linked].GetTransition(c);
+			linked = p;
 			while (t == q)
 			{
 				states[linked].UpdateTransition(c, clone);
 				linked = states[linked].link;
-				t = states[linked].GetTransition(c);
+				if (linked != -1)
+				{
+					t = states[linked].GetTransition(c);
+				}
+				else
+				{
+					break;
+				}
 			}
 			// We are finished, advance last to the new state and continue
 			last = cur;
@@ -175,6 +199,45 @@ struct SuffixAutomaton {
         }
         return true;
     }
+	// Returns the position of the first occurrence of a non-empty string s,
+	// or -1 if it does not occur
+	int first(string s)
+	{
+		int next = 0;
+		for (int i = 0; i < s.size(); i++)
+		{
+			next = states[next].GetTransition(s[i]);
+			if (next == -1) return -1;
+		}
+		return states[next].first - s.size() + 1;
+	}
+	// Return a vector of positions where a non-empty string s occurs
+	vector<int> positions(string s)
+	{
+		vector<int> p;
+		int sz = s.size();
+		if (!suffixreferences) ComputeSuffixReferences();
+		int next = 0;
+		for (int i = 0; i < sz; i++)
+		{
+			next = states[next].GetTransition(s[i]);
+			if (next == -1) return {};
+		}
+		// Traverse link tree down from first occurrence to find all others
+		vector<int> stack = {next};
+		while (stack.size() > 0)
+		{
+			next = stack.back();
+			stack.pop_back();
+			if (!states[next].clone) p.push_back(states[next].first - sz + 1);
+			for (auto& i : states[next].suffixreferences)
+			{
+				stack.push_back(i);
+			}
+		}
+		sort(p.begin(), p.end());
+		return p;
+	}
 };
 
 int main()
@@ -190,7 +253,7 @@ int main()
     }
 	SuffixAutomaton sa = SuffixAutomaton(s);
 	cout << "String: \"" << s << "\" is of size " << s.size() << " and has " << sa.states.size() << " states" << endl;
-    cout << "Enter the pipe character | to exit, or enter substrings to see if they occur in your original string:" << endl;
+    cout << "Enter a substring to see its position:" << endl;
     while (true)
     {
         string p;
@@ -199,14 +262,22 @@ int main()
         {
             p.push_back(a);
             cin.get(a);
-            if (a == '|') return 0;
         }
-        if (sa.contains(p))
+		vector<int> positions = sa.positions(p);
+        if (positions.size() != 0)
         {
-            cout << "\"" << s << "\" contains the substring " << "\"" << p << "\"" << endl;
+            cout << "\"" << s << "\" contains the substring " << "\"" << p << "\" at positions";
+			for (auto& i : positions)
+			{
+				cout << " " << i;
+			}
+			cout << endl;
         } else
         {
             cout << "\"" << s << "\" does not contain the substring " << "\"" << p << "\"" << endl;
         }
+		cout << "Type q to quit or type any other letter to continue." << endl;
+		cin.get(a);
+		if (a == 'q') return 0;
     }
 }

@@ -185,13 +185,6 @@ struct SuffixAutomaton {
 			linked = p;
 			while (t == q)
 			{
-				int whut = states[linked].link;
-				int th = states.size();
-				if (whut > th)
-				{
-					DEBUG_MSG("Ayy I'm walkin here");
-					cout << "hi" << endl;
-				}
 				states[linked].UpdateTransition(c, clone);
 				linked = states[linked].link;
 				if (linked != -1)
