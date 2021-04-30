@@ -170,7 +170,7 @@ int main()
 	vector<string> input;
 	string current;
 	vector<pair<int, long long>> results;
-	ifstream file ("moststates.in");
+	ifstream file ("1.in");
 	if (file.is_open())
 	{
 		while (getline (file, current))
@@ -187,7 +187,7 @@ int main()
         results.push_back({s.size(), duration});
 		cout << "Size n:" << s.size() << " Time(microseconds): " << duration << " Ratio: "  << duration/(double)s.size() << endl;
     }
-	ifstream sr("vectortimes.csv");
+	ofstream sr("vectortimes.csv");
 	if (sr.is_open())
 	{
 		sr << "Size n" << ",Time(microseconds):" << ",Ratio:" << endl;

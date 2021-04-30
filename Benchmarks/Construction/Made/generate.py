@@ -1,7 +1,7 @@
 import random
 import string
 n = 10000
-f = open("random.in", "w")
+f = open("1.in", "w")
 for i in range(50):
     s = ""
     for _ in range(n*(i+1)):
