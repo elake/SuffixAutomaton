@@ -1,0 +1,12 @@
+CXX = g++
+CXXFLAGS = -std=c++17
+
+OBJ = VectorTiming MapTiming
+
+all: $(OBJ)
+
+$(OBJ): %: %.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $(OBJ)
+
+clean:
+	rm -rf $(OBJ)
