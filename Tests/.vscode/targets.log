@@ -1,0 +1,503 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'VectorTiming.cpp', needed by 'VectorTiming.o'.  Stop.
+ 
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Apr 30 20:35:58 2021
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/elake/SuffixAutomaton/Tests
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/62
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+JOURNAL_STREAM = 8:71595
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+JAVA_HOME = /home/elake/Desktop/java-se-7u75-ri/
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+USERNAME = elake
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+_ = /snap/code/62/usr/share/code/code
+# makefile (from 'Makefile', line 1)
+OBJS = VectorTiming.o MapTiming.o
+# environment
+MANAGERPID = 5016
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/elake
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/62/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/elake/.local/bin:/home/elake/Desktop/java-se-7u75-ri//bin:/home/elake/Desktop/paper93/artifact/binary/:/home/elake/416/cli/codeql/:/home/elake/Tester/bin/:/home/elake/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/elake-Nitro-N50-600:@/tmp/.ICE-unix/5240,unix/elake-Nitro-N50-600:/tmp/.ICE-unix/5240
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/elake/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+SNAP = /snap/code/62
+# environment
+SNAP_VERSION = 3c4e3df9
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+DISABLE_WAYLAND = 1
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=abacdac6-e440-4d26-8c35-3b57828cc8af&iid=abacdac6-e440-4d26-8c35-3b57828cc8af&sid=abacdac6-e440-4d26-8c35-3b57828cc8af","uploadToServer":true}
+# environment
+INVOCATION_ID = fa33b6478e92443e8334bfd6bcc6f505
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/62/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 7573
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :1
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /home/elake/SuffixAutomaton/Tests
+# default
+.LOADED := 
+# environment
+ANT_HOME = /opt/ant
+# environment
+SSH_AGENT_PID = 5206
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/elake
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+LOGNAME = elake
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = KYchdUUskiei8PGvekflLupSb_8MYhQUvsrANa8cbGYB3WyPDyIb
+# environment
+SNAP_USER_COMMON = /home/elake/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# environment
+SNAP_REAL_HOME = /home/elake
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/elake/snap/code/62
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 4)
+CC = g++
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-fde2b855-a2c4-406e-ab95-ab86ae14b424.sock
+# makefile (from 'Makefile', line 2)
+SOURCE = VectorTiming.cpp MapTiming.cpp
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = elake
+# environment
+SNAP_REVISION = 62
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+CLASSPATH = /home/elake/antlr/antlr4-install/bin/antlr-4.8-complete.jar:
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /home/elake/.config/Code/CachedData/3c4e3df9e89829dce27b7b5c24508306b151f30d
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_CA:en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-1bdcdd1e-1.55.2-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+ANTLR_INS = /home/elake/antlr/antlr4-install
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+BREAKPAD_DUMP_LOCATION = /home/elake/.config/Code/exthost Crash Reports
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+QT_ACCESSIBILITY = 1
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = KYchdUUskiei8PGvekflLupSb_8MYhQUvsrANa8cbGYB3WyPDyIb
+# automatic
+ 
+<F = $(notdir $<)
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+SNAP_NAME = code
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# makefile (from 'Makefile', line 3)
+OUT = VectorTiming MapTiming PositionsTest
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 5)
+FLAGS = -g -c
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = en_CA.UTF-8
+# environment
+VSCODE_PID = 7660
+# variable set hash-table stats:
+# Load=130/1024=13%, Rehash=0, Collisions=20/156=13%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2052, inode 5262510): 4 files, no impossibilities.
+
+# 4 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+SuffixAutomaton.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test4: MapTiming
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 64):
+	@printf "This test performs a series of suffix automaton constructions on increasingly large segments of an English Bible.\n"
+	@printf "Test will commence in 5 seconds.\n"
+	@sleep 5
+	echo bible | ./MapTiming
+	@printf "The figures you see above represent the size of the string, as well as the time it took to construct. The ratio of input size to construction time will experience some variance, but the goal here is to demonstrate that it stays fairly consistent with regard to input size, which is what we would expect of a linear time O(n) construction. This test uses map to store transitions, to avoid linear search for transition lookup. These results are saved to biblemaptiming.csv\n"
+
+all: VectorTiming MapTiming PositionsTest SuffixAutomaton
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+VectorTiming.cpp:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+test3: VectorTiming
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 57):
+	@printf "This test performs a series of suffix automaton constructions on increasingly large strings designed to produce the maximum possible number of transitions between states.\n"
+	@printf "Test will commence in 5 seconds."
+	@sleep 5
+	echo mosttransitions | ./VectorTiming
+	@printf "The figures you see above represent the size of the string, as well as the time it took to construct. The ratio of input size to construction time will experience some variance, but the goal here is to demonstrate that it stays fairly consistent with regard to input size, which is what we would expect of a linear time construction. This test uses vectors to store transitions, with linear search for transition lookup. These results are saved to mosttransitionsvectortiming.csv\n"
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-04-30 20:33:17.056769833
+#  File has been updated.
+#  Successfully updated.
+
+MapTiming: MapTiming.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	g++ -g MapTiming.o -o MapTiming
+
+MapTiming.o: MapTiming.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 31):
+	$(CC) $(FLAGS) MapTiming.cpp -std=c++17
+
+test0: PositionsTest
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 37):
+	@printf "This test checks for correctness by using the automaton to find the positions of substrings in texts. The smallest text is one sentence, the largest text is the unabridged Bible (2113 pages in MS Word).\nThe test will commence in 5 seconds."
+	@sleep 5
+	./PositionsTest
+	@printf "Reults are saved in positionsresults.csv\n"
+
+SuffixAutomaton: SuffixAutomaton.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	g++ -g SuffixAutomaton.o -o SuffixAutomaton
+
+SuffixAutomaton.o: SuffixAutomaton.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 22):
+	$(CC) $(FLAGS) SuffixAutomaton.cpp -std=c++17
+
+test1: VectorTiming
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 43):
+	@printf "Testing construction times for linearity on English text.
+	@printf "Test will commence in 5 seconds."
+	@sleep 5
+	echo bible | ./VectorTiming
+	@printf "This test performed a series of suffix automaton constructions on increasingly large segments of an English Bible. The figures you see above represent the size of the string, as well as the time it took to construct. The ratio of input size to construction time will experience some variance, but the goal here is to demonstrate that it stays fairly consistent with regard to input size, which is what we would expect of a linear time O(n) construction. This test uses vectors to store transitions, with linear search for transition lookup. These results are saved to biblevectortiming.csv\n"
+
+test6: MapTiming
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 78):
+	@printf "This test performs a series of suffix automaton constructions on increasingly large strings designed to produce the maximum possible number of transitions between states.\n"
+	@printf "Test will commence in 5 seconds."
+	@sleep 5
+	echo mosttransitions | ./MapTiming
+	@printf "The figures you see above represent the size of the string, as well as the time it took to construct. The ratio of input size to construction time will experience some variance, but the goal here is to demonstrate that it stays fairly consistent with regard to input size, which is what we would expect of a linear time construction. This test uses map to store transitions, to avoid linear search for transition lookup. These results are saved to mosttransitionsmaptiming.csv\n"
+
+# Not a target:
+PositionsTest.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+VectorTiming: VectorTiming.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 16):
+	g++ -g VectorTiming.o -o VectorTiming
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+VectorTiming.o: VectorTiming.cpp
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 28):
+	$(CC) $(FLAGS) VectorTiming.cpp -std=c++17
+
+run: SuffixAutomaton
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	./SuffixAutomaton
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 90):
+	$(RM) $(OBJS) $(OUT)
+	$(RM) *.csv
+	
+ 
+
+test2: VectorTiming
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 50):
+	@printf "This test performs a series of suffix automaton constructions on increasingly large strings designed to produce the maximum possible number of states in the automaton.\n"
+	@printf "Test will commence in 5 seconds.\n"
+	@sleep 5
+	echo moststates | ./VectorTiming
+	@printf "The figures you see above represent the size of the string, as well as the time it took to construct. The ratio of input size to construction time will experience some variance, but the goal here is to demonstrate that it stays fairly consistent with regard to input size, which is what we would expect of a linear time construction. This test uses vectors to store transitions, with linear search for transition lookup. These results are saved to moststatesvectortiming.csv\n"
+
+test5: MapTiming
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 71):
+	@print "This test performs a series of suffix automaton constructions on increasingly large strings designed to produce the maximum possible number of states in the automaton.\n"
+	@printf "Test will commence in 5 seconds.\n"
+	@sleep 5
+	echo moststates | ./MapTiming
+	@printf "The figures you see above represent the size of the string, as well as the time it took to construct. The ratio of input size to construction time will experience some variance, but the goal here is to demonstrate that it stays fairly consistent with regard to input size, which is what we would expect of a linear time construction. This test uses map to store transitions, to avoid linear search for transition lookup. These results are saved to moststatesmaptiming.csv\n"
+
+# Not a target:
+MapTiming.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+PositionsTest.o: PositionsTest.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	$(CC) $(FLAGS) PositionsTest.cpp -std=c++17
+
+PositionsTest: PositionsTest.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 13):
+	g++ -g PositionsTest.o -o PositionsTest
+
+# files hash-table stats:
+# Load=25/1024=2%, Rehash=0, Collisions=0/64=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 30 / storage = 312 B / avg = 10 B
+# current buf: size = 8162 B / used = 312 B / count = 30 / avg = 10 B
+
+# strcache performance: lookups = 69 / hit rate = 56%
+# hash-table stats:
+# Load=30/8192=0%, Rehash=0, Collisions=1/69=1%
+# Finished Make data base on Fri Apr 30 20:35:58 2021
+
+ 
