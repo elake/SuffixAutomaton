@@ -1,9 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory '/home/elake/SuffixAutomaton/Tests'
-make: Leaving directory '/home/elake/SuffixAutomaton/Tests'
- 
-make: *** No rule to make target 'VectorTiming.cpp', needed by 'VectorTiming.o'.
-make: *** No rule to make target 'MapTiming.cpp', needed by 'MapTiming.o'.
-make: *** No rule to make target 'PositionsTest.cpp', needed by 'PositionsTest.o'.
-make: *** No rule to make target 'SuffixAutomaton.cpp', needed by 'SuffixAutomaton.o'.
- 
