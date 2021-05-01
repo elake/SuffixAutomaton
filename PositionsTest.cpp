@@ -275,7 +275,7 @@ int main()
                     if (search[i][t].first[k] != source[i].second[positions[j]+k]) passed = "failed";
                 }
             }
-            results.push_back({source[i].first, search[i][t].first, passed});
+            results.push_back({source[i].first, search[i][t].first, to_string(positions.size()), to_string(search[i][t].second), passed});
             if (passed == "passed")
             {
                 cout << "PASSED: Searching for \"" << search[i][t].first << "\" in " << source[i].first << " found " << positions.size() << " of " << search[i][t].second << " positions and all matched the substring." << endl;
@@ -291,10 +291,10 @@ int main()
 	ofstream sr("positionsresults.csv");
 	if (sr.is_open())
 	{
-		sr << "Source Title:," << ",Search String:" << ",Result:" << endl;
+		sr << "Source Title:" << ",Search String:" << ",Found:" << ",Expected:" << ",Result:" << endl;
 		for (auto& x : results)
 		{
-			sr << x[0] << "," << x[1] << "," << x[2] << endl;
+			sr << x[0] << "," << x[1] << "," << x[2] << "," << x[3] << "," << x[4] << endl;
 		}
         sr.close();
 	}
