@@ -266,7 +266,24 @@ int main()
 					cout << i << " ";
 				}
 				cout << "]" << endl;
-			} else
+				for (auto& position : positions)
+				{
+					int id = min(10, position);
+					if (position > 10) cout << "...";
+					for (int pf = position-id; pf < position; pf++)
+					{
+						cout <<s[pf];
+					}
+					cout << "(" << p << ")";
+					for (id = p.size()+position; (id < s.size() && id < p.size()+position+10); id++)
+					{
+						cout << s[id];
+					}
+					if (id < s.size()) cout << "...";
+					cout << endl;
+					}
+			}
+			else
 			{
 				cout << "NO, \"" << s << "\" does not contain the substring " << "\"" << p << "\"" << endl;
 			}

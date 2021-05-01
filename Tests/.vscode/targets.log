@@ -8,7 +8,7 @@ make: *** No rule to make target 'VectorTiming.cpp', needed by 'VectorTiming.o'.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Apr 30 20:35:58 2021
+# Make data base, printed on Fri Apr 30 20:48:47 2021
 
 # Variables
 
@@ -239,7 +239,6 @@ MAKEFILES :=
 # environment
 SNAP_COOKIE = KYchdUUskiei8PGvekflLupSb_8MYhQUvsrANa8cbGYB3WyPDyIb
 # automatic
- 
 <F = $(notdir $<)
 # environment
 ELECTRON_RUN_AS_NODE = 1
@@ -440,7 +439,6 @@ clean:
 	$(RM) $(OBJS) $(OUT)
 	$(RM) *.csv
 	
- 
 
 test2: VectorTiming
 #  Implicit rule search has not been done.
@@ -498,6 +496,6 @@ PositionsTest: PositionsTest.o
 # strcache performance: lookups = 69 / hit rate = 56%
 # hash-table stats:
 # Load=30/8192=0%, Rehash=0, Collisions=1/69=1%
-# Finished Make data base on Fri Apr 30 20:35:58 2021
+# Finished Make data base on Fri Apr 30 20:48:47 2021
 
  
